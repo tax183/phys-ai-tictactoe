@@ -1,0 +1,257 @@
+/* خلفية عامة مريحة */
+.bg {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #FFF7E6; /* بيج فاتح مستوحى من التصميم */
+    color: #333333;
+}
+
+/* شريط علوي */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+    background: #FFE2BF; /* برتقالي فاتح */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* هوية */
+.brand {
+    display: flex;
+    align-items: center;
+}
+.brand-main {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1E8A4B; /* أخضر */
+}
+.brand-sub {
+    font-size: 11px;
+    color: #FF8A34; /* برتقالي */
+}
+
+/* لوقو الهيدر */
+.brand-logo{
+    height: 42px;
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+/* روابط التنقل */
+.nav-links a {
+    margin-left: 18px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #555;
+    padding: 6px 12px;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+}
+.nav-links a:hover {
+    background-color: #FFFAF3;
+    color: #1E8A4B;
+}
+.nav-links a.active {
+    background-color: #1B84C6;
+    color: #ffffff;
+}
+
+/* حاوية عامة */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+}
+
+/* كرت المحتوى */
+.card {
+    background-color: #FFFFFF;
+    padding: 24px 24px 28px;
+    border-radius: 22px;
+    box-shadow: 0 8px 26px rgba(0,0,0,0.06);
+    max-width: 520px;
+    width: 100%;
+}
+
+/* عناوين ونصوص */
+.title {
+    margin: 0 0 6px;
+    font-size: 22px;
+    color: #1E8A4B;
+}
+.subtitle {
+    margin: 0 0 18px;
+    font-size: 13px;
+    color: #666666;
+}
+.text {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+/* لوح اللعبة */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    grid-gap: 8px;
+    justify-content: center;
+    margin: 10px auto 14px;
+}
+
+/* الخانات */
+.cell {
+    width: 90px;
+    height: 90px;
+    font-size: 34px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #FFF3DD;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s;
+}
+.cell:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+    background-color: #FFE7C7;
+}
+
+/* أزرار */
+.controls {
+    text-align: center;
+    margin-bottom: 8px;
+}
+.btn {
+    padding: 8px 18px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #1B84C6; /* أزرق هادي */
+    color: #ffffff;
+    font-size: 13px;
+    transition: background-color 0.2s, transform 0.1s;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: #15689A;
+    transform: translateY(-1px);
+}
+
+/* حالة اللعبة */
+.status {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 4px;
+    color: #555555;
+}
+.status-win {
+    color: #1E8A4B;
+    font-weight: 600;
+}
+.status-draw {
+    color: #FF8A34;
+    font-weight: 600;
+}
+
+/* صفحة الهبوط */
+.hero{
+    min-height: calc(100vh - 72px);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:16px;
+    padding:24px;
+    text-align:center;
+}
+.hero-logo{
+    max-width:300px;
+    width:60%;
+    height:auto;
+    border-radius:18px;
+    box-shadow:0 10px 24px rgba(0,0,0,0.08);
+}
+.hero-title{
+    font-size:18px;
+    color:#666;
+    margin:0 0 6px;
+}
+.hero-btn{
+    margin-top:6px;
+}
+
+/* شبكة عمودين لصفحة About */
+.grid-2{
+    display:grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap:18px;
+    margin-top:8px;
+}
+.about-box{
+    background:#FFF9F1;
+    border-radius:16px;
+    padding:14px 16px;
+    box-shadow:0 6px 16px rgba(0,0,0,0.05);
+}
+.about-title{
+    margin:0 0 8px;
+    color:#1E8A4B;
+    font-size:18px;
+}
+.about-list{
+    list-style:none;
+    padding:0;
+    margin:0 0 10px;
+}
+.about-list li{
+    padding:6px 0;
+    border-bottom:1px dashed #EEDCC8;
+    font-size:14px;
+}
+.about-list li:last-child{
+    border-bottom:none;
+}
+.about-list .id{
+    color:#1B84C6;
+}
+.about-meta{
+    font-size:13px;
+    color:#555;
+    display:grid;
+    gap:4px;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 600px){
+    .top-bar{
+        padding:10px 16px;
+    }
+    .board {
+        grid-template-columns: repeat(3, 70px);
+        grid-gap: 6px;
+    }
+    .cell {
+        width: 70px;
+        height: 70px;
+        font-size: 26px;
+    }
+    .card {
+        padding: 18px;
+    }
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .hero-logo{
+        width:75%;
+        max-width:320px;
+    }
+}

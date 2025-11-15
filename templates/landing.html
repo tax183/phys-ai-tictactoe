@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Phys AI — Welcome</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body class="bg">
+<header class="top-bar">
+  <div class="brand">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="brand-logo" />
+    <span class="brand-main">Phys AI</span>
+    <span class="brand-sub">Smart Tic-Tac-Toe</span>
+  </div>
+  <nav class="nav-links">
+    <a href="{{ url_for('play') }}">Play</a>
+    <a href="{{ url_for('about') }}">About Project</a>
+  </nav>
+</header>
+
+<main class="hero">
+  <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="hero-logo" />
+  <h1 class="hero-title">Turn screentime into active playtime!</h1>
+  <a class="btn hero-btn" href="{{ url_for('play') }}">Play</a>
+</main>
+</body>
+</html>
